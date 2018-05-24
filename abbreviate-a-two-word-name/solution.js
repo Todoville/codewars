@@ -1,4 +1,10 @@
 let abbrevName = function(name) {
-  return name.match(/[A-Z]/g).join('.')
-  
-  }
+let thisSolutionIsALittleConvolutedOops = [];
+let nameArr = name.split(' ')
+for(i in nameArr) {
+ thisSolutionIsALittleConvolutedOops.push(nameArr[i].charAt(0))
+}
+let initals = thisSolutionIsALittleConvolutedOops.join('.')
+let caps = initals.toUpperCase()
+return caps
+}
